@@ -7,7 +7,7 @@ on:
     types: [opened, synchronize, reopened]
 jobs:
   build-and-analyze:
-    name: Build & Analyz Monorepo
+    name: Build & Analyze Monorepo
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
