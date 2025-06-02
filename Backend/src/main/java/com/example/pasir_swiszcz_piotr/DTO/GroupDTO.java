@@ -23,6 +23,6 @@ public class GroupDTO {
     @ManyToOne
     @JoinColumn(name = "owner_id")
     private User owner;
-
+	//ll
     private LocalDateTime createdAt =LocalDateTime.now();
 }
