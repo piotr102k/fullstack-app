@@ -3,11 +3,11 @@ sonar.projectKey=piotr102k_fullstack-app
 sonar.organization=piotr102k
 sonar.host.url=https://sonarcloud.io
 # backend
-sonar.modules-backend, frontend
-backend.sonar.projectBaseDir-backend/PASiR_Nazwisko_Imie
+sonar.modules=backend, frontend
+backend.sonar.projectBaseDir=Backend/
 backend.sonar.sources=src/main
-backend.sonar.java.binaries-target/classes
+backend.sonar.java.binaries=target/classes
 # frontend bez testów
 frontend.sonar.projectBaseDir=frontend
-frontend.sonar.sources-src
+frontend.sonar.sources=src
 frontend.sonar.exclusions=**/*.spec.ts,**/*.test.tsx,**/__tests_
