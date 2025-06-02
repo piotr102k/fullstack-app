@@ -992,11 +992,11 @@ const GroupMembersPageWrapper: React.FC = () => {
   const { groupId } = useParams<{ groupId: string }>();
   const navigate = useNavigate();
 
-  // For now, just pass a mocked group object (since we don’t have API here)
+
   const group = {
     id: Number(groupId),
     name: `Group ${groupId}`,
-    ownerId: 1, // mock or pull from user context if needed
+    ownerId: 1, 
   };
 
   return (
@@ -1073,18 +1073,4 @@ const App: React.FC = () => {
 };
 
 export default App;
-🔑 What’s fixed?
-✅ We inject the props GroupMembersPage expects
-✅ We avoid crashing on group.id being undefined
-✅ We keep the fix only in App.tsx as you requested
 
-If you later want to replace the mocked group with a real API call,
-we can upgrade the wrapper into a loader component.
-
-Want me to set that up too? Let me know! 🚀
-
-
-
-
-Nie wybrano plikuNie wybrano pliku
-ChatGPT can make mistakes. Check important info. See Cookie Preferences.
