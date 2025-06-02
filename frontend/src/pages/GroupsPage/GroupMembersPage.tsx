@@ -38,9 +38,7 @@ interface Debt {
   confirmedByCreditor: boolean;
 }
 
-const GroupMembersPage: React.FC<Props> = () => {
-  const { group } = useParams<{ group: string }>();
-  const onBack = useNavigate();
+const GroupMembersPage: React.FC<Props> = ({ group, onBack }) => {
   const { user } = useAuth();
   const [members, setMembers] = useState<Member[]>([]);
   const [newMemberEmail, setNewMemberEmail] = useState("");
